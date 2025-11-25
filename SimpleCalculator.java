@@ -39,7 +39,7 @@ class SimpleCalculator {
                 state = sc.next().charAt(0);
 
 
-        }while (state=='y'||state=='Y');
+        }while (state=='y'|| state=='Y');
     }
 
 }

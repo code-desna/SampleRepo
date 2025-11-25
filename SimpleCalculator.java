@@ -8,14 +8,15 @@ class SimpleCalculator {
         int numTwo;
         int input;
         char state;
-        System.out.println("-----Menu-------\n1.Addition\n2.Substraction\n3.Division\n4.Multiplication\nEnter your choice");
-        input = sc.nextInt();
-        System.out.println("Enter first number");
-        numOne = sc.nextInt();
-        System.out.println("Enter second number");
-        numTwo = sc.nextInt();
+
 
         do {
+            System.out.println("-----Menu-------\n1.Addition\n2.Substraction\n3.Division\n4.Multiplication\nEnter your choice");
+            input = sc.nextInt();
+            System.out.println("Enter first number");
+            numOne = sc.nextInt();
+            System.out.println("Enter second number");
+            numTwo = sc.nextInt();
             switch (input) {
                 case 1:
                     System.out.println(numOne + numTwo);

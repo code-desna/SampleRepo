@@ -43,7 +43,7 @@ class Calc implements CalcMethods {
                 a = sc.nextInt();
                 System.out.println("Enter second num");
                 b = sc.nextInt();
-         System.out.println("Enter ur choice");
+            System.out.println("Enter ur choice");
                 operator = sc.nextInt();
                 if (operator == '1') {
                     System.out.println(obj.add(a, b));

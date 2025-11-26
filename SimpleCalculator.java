@@ -10,7 +10,7 @@ class SimpleCalculator {
         char state;
 
 
-        do {
+do {
             System.out.println("-----Menu-------\n1.Addition\n2.Substraction\n3.Division\n4.Multiplication\nEnter your choice");
             input = sc.nextInt();
             System.out.println("Enter first number");

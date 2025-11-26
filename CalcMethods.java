@@ -29,29 +29,36 @@ class Calc implements CalcMethods {
     }
 }
     class Calculator {
-        public static void main(String[] args){
-            Scanner sc=new Scanner(System.in);
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
             int a;
             int b;
-            char operator;
-            Calc obj=new Calc();
-            System.out.println("Enter first num");
-            a=sc.nextInt();
-            System.out.println("Enter second num");
-            b=sc.nextInt();
-            System.out.println("Enter operator(+,-,/,*)");
-            operator=sc.next().charAt(0);
-            if(operator=='+'){
-                System.out.println( obj.add(a,b));
-            }else if(operator=='-'){
-                System.out.println( obj.sub(a,b));
-            }else if(operator=='*'){
-                System.out.println( obj.mul(a,b));
-            }else if(operator=='/'){
-               System.out.println(obj.div(a,b));
-            }else {
-                System.out.println("Not valid oops");
-            }
+            int operator;
+            char choice;
+            Calc obj = new Calc();
+            do {
+                System.out.println("-----Menu-------\n1.Addition\n2.Substraction\n3.Division\n4.Multiplication\nEnter your choice");
+
+                System.out.println("Enter first num");
+                a = sc.nextInt();
+                System.out.println("Enter second num");
+                b = sc.nextInt();
+System.out.println("Enter ur choice");
+                operator = sc.nextInt();
+                if (operator == '1') {
+                    System.out.println(obj.add(a, b));
+                } else if (operator == '2') {
+                    System.out.println(obj.sub(a, b));
+                } else if (operator == '4') {
+                    System.out.println(obj.mul(a, b));
+                } else if (operator == '3') {
+                    System.out.println(obj.div(a, b));
+                } else {
+                    System.out.println("Not valid oops");
+                }
+                System.out.println("Enter y or Y to continue");
+                choice=sc.next().charAt(0);
+            }while(choice=='y'|| choice=='Y');
         }
     }
 

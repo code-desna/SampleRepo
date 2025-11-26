@@ -37,10 +37,10 @@ class SimpleCalculator {
                     System.out.println("Enter valid operator");
             }
             System.out.println("Do you want to continue?press y/n");
-                state = sc.next().charAt(0);
+            state = sc.next().charAt(0);
 
 
-        }while (state=='y'|| state=='Y');
+        } while (state == 'y' || state == 'Y');
     }
 
 }

@@ -34,7 +34,7 @@ class Calc implements CalcMethods {
             int a;
             int b;
             int operator;
-            char choice;
+            String choice;
             Calc obj = new Calc();
             do {
                 System.out.println("-----Menu-------\n1.Addition\n2.Substraction\n3.Division\n4.Multiplication\nEnter your choice");
@@ -45,20 +45,22 @@ class Calc implements CalcMethods {
                 b = sc.nextInt();
             System.out.println("Enter ur choice");
                 operator = sc.nextInt();
-                if (operator == '1') {
+                if (operator == 1) {
                     System.out.println(obj.add(a, b));
-                } else if (operator == '2') {
+                } else if (operator == 2) {
                     System.out.println(obj.sub(a, b));
-                } else if (operator == '4') {
+                } else if (operator == 4) {
                     System.out.println(obj.mul(a, b));
-                } else if (operator == '3') {
+                } else if (operator == 3) {
                     System.out.println(obj.div(a, b));
                 } else {
                     System.out.println("Not valid oops");
                 }
+                sc.nextLine();
                 System.out.println("Enter y or Y to continue");
-                choice=sc.next().charAt(0);
-            }while(choice=='y'|| choice=='Y');
+
+                choice = sc.nextLine();
+            }while(choice.equalsIgnoreCase("y"));
         }
     }
 
